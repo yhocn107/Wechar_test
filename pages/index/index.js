@@ -3,31 +3,31 @@
 var app = getApp()
 Page({
   data: {
-    motto: '简易计算器☞',
+    motto: '加法计算器',
     userInfo: {},
     defaultSize: 'default',
     disabled: false,
-    iconType:'info_circle'
+    iconType: 'info_circle'
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  toCalc:function(){
+  toCalc: function () {
     wx.navigateTo({
-      url:'../calc/calc'
+      url: '../plus/plus'
     })
   },
   onLoad: function () {
     console.log('onLoad');
     var that = this
-  	//调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo(function (userInfo) {
       //更新数据
       that.setData({
-        userInfo:userInfo
+        userInfo: userInfo
       })
     })
   }

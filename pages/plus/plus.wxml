@@ -1,0 +1,9 @@
+<view>
+<text>A</text>
+    <input  placeholder="请输入数字" bindinput="getA"></input>
+    <text>B</text>
+    <input   placeholder="请输入数字" bindinput="getB"></input>
+    <button  bindtap="plus">A+B</button>
+    <text>=</text>
+    <text>{{result}}</text>
+</view>
